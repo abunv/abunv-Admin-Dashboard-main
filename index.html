@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- =======================ICONS=============================== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/8760c8464a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- =======================STYLES=============================== -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- =======================ASIDE SECTION=============================== -->
+
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./images/logo.png" alt="logo" />
+            <h2><span class="danger">ABU</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <i class="uil uil-multiply"></i>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#" class="active">
+            <i class="uil uil-microsoft"></i>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="#">
+            <i class="uil uil-user"></i>
+            <h3>お客さま</h3>
+          </a>
+          <a href="#">
+            <i class="uil uil-invoice"></i>
+            <h3>注文</h3>
+          </a>
+          <a href="#">
+            <i class="uil uil-chart-line"></i>
+            <h3>分析</h3>
+          </a>
+          <a href="#">
+            <i class="uil uil-envelope"></i>
+            <h3>メール</h3>
+            <span class="message-count">26</span>
+          </a>
+          <a href="#">
+            <i class="uil uil-clipboard-notes"></i>
+            <h3>製品</h3>
+          </a>
+          <a href="#">
+            <i class="uil uil-exclamation-octagon"></i>
+            <h3>レポート</h3>
+          </a>
+          <a href="#">
+            <i class="uil uil-setting"></i>
+            <h3>設定</h3>
+          </a>
+          <a href="#">
+            <i class="uil uil-plus"></i>
+            <h3>製品を追加</h3>
+          </a>
+          <a href="#">
+            <i class="uil uil-signout"></i>
+            <h3>ログアウト</h3>
+          </a>
+        </div>
+      </aside>
+
+      <!-- =======================MAIN SECTION=============================== -->
+
+      <main>
+        <h1>Dashboard</h1>
+
+        <div class="date">
+          <input type="date" />
+        </div>
+
+        <div class="insights">
+          <div class="sales">
+            <i class="fa-solid fa-square-poll-vertical"></i>
+            <div class="middle">
+              <div class="left">
+                <h3>総売上</h3>
+                <h1>¥4353</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted"> 過去24時間 </small>
+          </div>
+          <!-- ----------END OF SALES---------------- -->
+
+          <div class="expenses">
+            <i class="fa-solid fa-chart-simple"></i>
+            <div class="middle">
+              <div class="left">
+                <h3>総費用</h3>
+                <h1>¥2116</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>62%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted"> 過去24時間 </small>
+          </div>
+          <!-- ----------END OF EXPENSES---------------- -->
+
+          <div class="income">
+            <i class="fa-solid fa-chart-line"></i>
+            <div class="middle">
+              <div class="left">
+                <h3>総収入</h3>
+                <h1>¥1540</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>44%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted"> 過去24時間 </small>
+          </div>
+          <!-- ----------END OF INCOME---------------- -->
+        </div>
+        <!-- --------------END OF INSIGHTS-------------- -->
+
+        <!-- ------------------RECENT ORDERS------------ -->
+        <div class="recent-orders">
+          <h2>最近の注文</h2>
+          <table>
+            <tbody>
+              <tr>
+                <th>製品名</th>
+                <th>製品番号</th>
+                <th>支払い</th>
+                <th>状態</th>
+              </tr>
+              <tr>
+                <td>折りたたみ式ミニドローン</td>
+                <td>85631</td>
+                <td>Due</td>
+                <td class="warning">保留中</td>
+                <td class="primary">詳細</td>
+              </tr>
+              <tr>
+                <td>折りたたみ式ミニドローン</td>
+                <td>85631</td>
+                <td>Due</td>
+                <td class="warning">保留中</td>
+                <td class="primary">詳細</td>
+              </tr>
+              <tr>
+                <td>折りたたみ式ミニドローン</td>
+                <td>85631</td>
+                <td>Due</td>
+                <td class="warning">保留中</td>
+                <td class="primary">詳細</td>
+              </tr>
+              <tr>
+                <td>折りたたみ式ミニドローン</td>
+                <td>85631</td>
+                <td>Due</td>
+                <td class="warning">保留中</td>
+                <td class="primary">詳細</td>
+              </tr>
+             
+            </tbody>
+          </table>
+          <a href="#">すべて表示</a>
+        </div>
+      </main>
+
+      <!-- =======================RIGHT SECTION=============================== -->
+
+      <div class="right">
+        <!-- ----------------TOP----------------- -->
+        <div class="top">
+          <button id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="theme-toggler">
+            <i class="fa-solid fa-sun active"></i>
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>Abu</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="./images/profile-1.jpg" alt="profile img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------------RECENT UPDATES----------------- -->
+        <div class="recent-updates">
+          <h2>Recent Updates</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="./images/profile-2.jpg" alt="" />
+              </div>
+              <div class="message">
+                <p>
+                  <b>William Smith</b> ナイトライオンテックのGPSドローンの注文を受け取りました。
+                </p>
+                <small class="text-muted">2分前</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="./images/profile-3.jpg" alt="" />
+              </div>
+              <div class="message">
+                <p>
+                  <b>James Brown</b> ナイトライオンテックのGPSドローンの注文を受け取りました。
+                </p>
+                <small class="text-muted">2分前</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="./images/profile-4.jpg" alt="" />
+              </div>
+              <div class="message">
+                <p>
+                  <b>Alice Garcie</b> ナイトライオンテックのGPSドローンの注文を受け取りました。
+                </p>
+                <small class="text-muted">2分前</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------SALES----------------- -->
+        <div class="sales-analytics">
+          <h2>販売分析</h2>
+          <div class="item online">
+            <div class="icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>オンライン注文</h3>
+                <small class="text-muted">過去24時間</small>
+              </div>
+              <h5 class="success">+39%</h5>
+              <h3>3849</h3>
+            </div>
+          </div>
+          <div class="item offline">
+            <div class="icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>オフライン注文</h3>
+                <small class="text-muted">過去24時間</small>
+              </div>
+              <h5 class="danger">-17%</h5>
+              <h3>1100</h3>
+            </div>
+          </div>
+          <div class="item customers">
+            <div class="icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>新しいコメント</h3>
+                <small class="text-muted">過去24時間</small>
+              </div>
+              <h5 class="success">+25%</h5>
+              <h3>849</h3>
+            </div>
+          </div>
+          <div class="item add-product">
+            <div>
+              <i class="fa-solid fa-plus"></i>
+              <h3>製品を追加</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =======================SCRIPT=============================== -->
+    <script src="app.js"></script>
+  </body>
+</html>
